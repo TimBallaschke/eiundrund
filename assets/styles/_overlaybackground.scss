@@ -1,0 +1,48 @@
+.overlay-background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+    pointer-events: none;
+
+    &.not-visible {
+        display: none;
+        opacity: 0;
+    }
+
+    &.opening-step {
+        display: inline-block;
+        opacity: 0;
+    }
+    
+    &.visible {
+        display: block;
+        opacity: 1;
+    }
+
+}
+
+.overlay-background-color {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100dvh;
+    width: 100vw;
+    z-index: 20;
+}
+
+.overlay-background-blur {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100dvh;
+    width: 100vw;
+    background-color: $background-color-transparent;
+    backdrop-filter: contrast(150%) invert(100%) brightness(50%);
+    z-index: 10;
+}

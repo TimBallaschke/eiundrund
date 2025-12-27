@@ -1,0 +1,178 @@
+title: Video
+
+
+columns:
+  - width: 1/3
+    sections:
+      videos:
+        type: fields
+        fields:
+          mobile_webm:
+            type: files
+            label: Video Teaser Mobile WebM
+            layout: cards
+            ratio: 1/1
+            multiple: false
+          mobile_mp4:
+            type: files
+            label: Video Teaser Mobile MP4
+            layout: cards
+            ratio: 1/1
+            multiple: false
+            required: true
+          lineA:
+            type: line
+          desktop_webm:
+            type: files
+            label: Video Teaser Desktop WebM
+            layout: cards
+            ratio: 1/1
+            multiple: false
+          desktop_mp4:
+            type: files
+            label: Video Teaser Desktop MP4
+            layout: cards
+            ratio: 1/1
+            multiple: false
+            required: true
+          lineB:
+            type: line
+          vimeo_id:
+            type: text
+            label: Vimeo Full Video ID
+            required: true
+          lineC:
+            type: line
+          still_image:
+            type: files
+            label: Still Image
+            layout: cards
+            ratio: 1/1
+            multiple: false
+            required: true
+
+  - width: 1/3
+    sections:
+      information:
+        type: fields
+        fields:
+          project_title:
+            type: text
+            label: Project Title
+            required: true
+          client:
+            type: text
+            label: Client
+            required: true
+          lineD:
+            type: line
+          duration:
+            type: text
+            label: Duration
+            required: true
+          year:
+            type: text
+            label: Year
+            required: true
+          location:
+            type: text
+            label: Location
+            required: true
+          type_of_project:
+            type: select
+            label: Type
+            required: true
+            options:
+              - Musicvideo
+              - Aftermovie
+              - Showreel
+              - Commercial
+          lineE:
+            type: line
+          director:
+            type: text
+            label: Director
+          producer:
+            type: text
+            label: Producer
+          executive_producer:
+            type: text
+            label: Executive Producer
+          creative_director:
+            type: text
+            label: Creative Director
+          concept:
+            type: text
+            label: Concept
+          camera:
+            type: text
+            label: Camera
+          steadicam:
+            type: text
+            label: Steadicam
+          first_ac:
+            type: text
+            label: 1. AC
+          second_ac:
+            type: text
+            label: 2. AC
+          drone_op:
+            type: text
+            label: Drone OP
+          gaffer:
+            type: text
+            label: Gaffer
+          lead_electric:
+            type: text
+            label: Lead Electric
+          styling:
+            type: text
+            label: Styling
+          make_up_and_hair:
+            type: text
+            label: Make-Up & Hair
+          setdesign:
+            type: text
+            label: Setdesign
+          production_assistance:
+            type: text
+            label: Production Assistance
+          edit:
+            type: text
+            label: Edit
+          vfx:
+            type: text
+            label: VFX
+          color_grading:
+            type: text
+            label: Color Grading
+          three_d:
+            type: text
+            label: 3D
+          assistance:
+            type: text
+            label: Assistance
+          bts:
+            type: text
+            label: BTS
+          sound_design:
+            type: text
+            label: Sound Design
+          production_company:
+            type: text
+            label: Production Company
+          label:
+            type: text
+            label: Label
+          
+  - width: 1/3
+    sections:
+      color:
+        type: fields
+        fields:
+          color:
+            type: color
+            required: true
+
+
+

@@ -1,0 +1,6 @@
+title: Videos
+
+sections:
+  videos:
+    type: pages
+    template: video

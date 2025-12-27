@@ -1,0 +1,486 @@
+//Default state
+
+//White
+
+.white {
+    color: white;
+    transition: $transition-1;
+
+    .time-bar {
+        background-color: white;
+    }
+
+    .time-bar-end-line {
+
+        border-left: solid white $border-width-1;
+    }
+
+    .time-bar-full-video {
+        background-color: white;
+    }
+    
+    .time-bar-full-video-outline {
+        border: solid white $border-width-1;
+    }
+
+    .time-bar-background-color-full-video {
+        background-color: white;
+        opacity: $opacity-1;
+    }
+
+    .stripe {
+        border-left: solid white $border-width-1;
+    }
+
+    .start-stripe {
+        border-left: solid white $border-width-1;
+    }
+
+    .end-stripe {
+        border-left: solid white $border-width-1;
+    }
+
+    .plus-button {
+            border: solid white $border-width-1;
+    }
+
+    .plus-button-background-color {
+        background-color: white;
+        opacity: $opacity-1;
+    }
+
+    .circle-background-color {
+        background-color: white;
+        opacity: $opacity-1;
+    }
+
+    .plus-vertical {
+        border-left: solid white $border-width-1;
+    }
+
+    .plus-horizontal {
+        border-top: solid white $border-width-1;
+    }
+
+    .full-video-button {
+        background-color: white;
+        color: black;
+    }
+
+    .info-grid {
+        border-top: solid white $border-width-1;
+    }
+
+    .credits-grid {
+        border-top: solid white $border-width-1;
+        border-bottom: solid white $border-width-1;
+    }
+
+    .about-text-container {
+        border-top: solid white $border-width-1;
+    }
+
+    .about-clients-container {
+        border-top: solid white $border-width-1;
+        border-bottom: solid white $border-width-1;
+    }
+
+    .about-contact-container {
+        border-bottom: solid white $border-width-1;
+    }
+
+    .link {
+        color: white;
+    }
+    
+    .circle {
+        border: solid white $border-width-1;
+
+        &.selected {
+            background-color: white;
+        }
+    }
+
+
+    .overlay-background-color {
+        background-color: black;
+        opacity: $opacity-3;
+    }
+
+    .full-video-pause-button-background-color {
+        background-color: white;
+        opacity: $opacity-1;
+    }
+
+    .pause-sign-rectangle {
+        background-color: white;
+    }
+
+    .end-stripe-full-video {
+        border-left: solid white $border-width-1;
+    }
+
+    .full-video-pause-button {
+        border: solid white $border-width-1;
+    }
+
+    .play-sign {
+        width: 0;
+        height: 0;
+        border-left: 5rem solid white;
+        border-top: 2.5rem solid transparent;
+        border-bottom: 2.5rem solid transparent;
+    }
+
+    .full-video-loading-screen {
+        background-color: black;
+    }
+
+    .full-video-loading-screen-text {
+        color: white;
+    }
+
+    .swipe-arrow {
+        border-bottom: solid white $border-width-1;
+        border-right: solid white $border-width-1;
+    }
+}
+
+//active buttons
+
+.info-displayed {
+
+    .about {
+        opacity: 0.2;
+    }
+
+    .bottom-buttons-left {
+        opacity: 0.2;
+    }
+}
+
+.filter-displayed {
+    .about {
+        opacity: 0.2;
+    }
+
+    .index-button {
+        opacity: 0.2;
+    }
+
+    .plus-button {
+        opacity: 0.2;
+    }
+}
+
+
+
+//Color
+
+.custom-color {
+    color: var(--primary-color);
+    transition: $transition-1;
+
+
+    .full-video-button {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+
+    .info-grid {
+        border-top: solid var(--primary-color) $border-width-1;
+    }
+
+    .credits-grid {
+        border-top: solid var(--primary-color) $border-width-1;
+        border-bottom: solid var(--primary-color) $border-width-1;
+    }
+
+    .about-text-container {
+        border-top: solid var(--primary-color) $border-width-1;
+    }
+
+    .about-clients-container {
+        border-top: solid var(--primary-color) $border-width-1;
+        border-bottom: solid var(--primary-color) $border-width-1;
+    }
+
+    .about-contact-container {
+        border-bottom: solid var(--primary-color) $border-width-1;
+    }
+
+    .link {
+        color: var(--primary-color);
+    }
+    
+
+    .time-bar {
+        background-color: var(--primary-color);
+    }
+
+
+    .time-bar-end-line {
+
+        border-left: solid var(--primary-color) $border-width-1;
+    }
+    
+    .time-bar-background-color {
+        background-color: var(--primary-color);
+        opacity: $opacity-1;
+    }
+
+    .time-bar-full-video {
+        background-color: var(--primary-color);
+    }
+
+    .time-bar-full-video-outline {
+        border: solid var(--primary-color) $border-width-1;
+    }
+
+
+    
+    .time-bar-background-color-full-video {
+        background-color: var(--primary-color);
+        opacity: $opacity-1;
+    }
+
+    .stripe {
+        border-left: solid var(--primary-color) $border-width-1;
+    }
+
+    .start-stripe {
+        border-left: solid var(--primary-color) $border-width-1;
+    }
+
+    .end-stripe {
+        border-left: solid var(--primary-color) $border-width-1;
+    }
+
+    .plus-button {
+        border: solid var(--primary-color) $border-width-1;
+    }
+
+    .plus-button-background-color {
+        background-color: var(--primary-color);
+        opacity: $opacity-1;
+    }
+
+    .plus-vertical {
+        border-left: solid var(--primary-color) $border-width-1;
+    }
+
+    .plus-horizontal {
+        border-top: solid var(--primary-color) $border-width-1;
+
+    }
+
+    .circle-background-color {
+        opacity: 1;
+    }
+
+    .overlay-background-color {
+        background-color: var(--primary-color);
+        opacity: $opacity-2;
+
+    }
+
+    .full-video-pause-button-background-color {
+        background-color: var(--primary-color);
+        opacity: $opacity-1;
+    }
+
+    .full-video-pause-button {
+        border: solid var(--primary-color) $border-width-1;
+    }
+    
+    .circle {
+        border: solid var(--primary-color) $border-width-1;
+
+        &.selected {
+            background-color: var(--primary-color);
+        }
+    } 
+
+    .pause-sign-rectangle {
+        background-color: var(--primary-color);
+    }
+
+    .end-stripe-full-video {
+        border-left: solid var(--primary-color) $border-width-1;
+    }
+
+    .play-sign {
+        width: 0;
+        height: 0;
+        border-left: 5rem solid var(--primary-color);
+        border-top: 2.5rem solid transparent;
+        border-bottom: 2.5rem solid transparent;
+    }
+
+
+
+    &.info-displayed,
+    &.about-displayed,
+    &.filter-displayed {
+        color: var(--secondary-color);
+    
+        .time-bar {
+            background-color: var(--secondary-color);
+        }
+
+        
+    
+        .circle-background-color {
+            background-color: var(--secondary-color);
+            opacity: 1;
+        }
+    
+        .full-video-button {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+
+        .full-video-button {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+
+        .time-bar-end-line {
+
+            border-left: solid var(--secondary-color) $border-width-1;
+        }
+        
+        .time-bar-background-color {
+            background-color: var(--secondary-color);
+            opacity: $opacity-1;
+        }
+
+        .stripe {
+            border-left: solid var(--secondary-color) $border-width-2;
+        }
+    
+        .start-stripe {
+            border-left: solid var(--secondary-color) $border-width-2;
+        }
+    
+        .end-stripe {
+            border-left: solid var(--secondary-color) $border-width-2;
+        }
+
+        .plus-button {
+            border: solid var(--secondary-color) $border-width-1;
+        }
+    
+        .plus-button-background-color {
+            background-color: var(--secondary-color);
+            opacity: $opacity-1;
+        }
+    
+        .plus-vertical {
+            border-left: solid var(--secondary-color) $border-width-1;
+        }
+    
+        .plus-horizontal {
+            border-top: solid var(--secondary-color) $border-width-1;
+        }
+    
+        .full-video-button {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+    
+        .info-grid {
+            border-top: solid var(--secondary-color) $border-width-1;
+        }
+    
+        .credits-grid {
+            border-top: solid var(--secondary-color) $border-width-1;
+            border-bottom: solid var(--secondary-color) $border-width-1;
+        }
+
+        .about-text-container {
+            border-top: solid var(--secondary-color) $border-width-1;
+        }
+    
+        .about-clients-container {
+            border-top: solid var(--secondary-color) $border-width-1;
+            border-bottom: solid var(--secondary-color) $border-width-1;
+        }
+    
+        .about-contact-container {
+            border-bottom: solid var(--secondary-color) $border-width-1;
+
+        }
+
+        .link {
+            color: var(--secondary-color);
+        }
+
+        .circle {
+            border: solid var(--secondary-color) $border-width-1;
+            background-color: transparent;
+
+            &.selected {
+                background-color: var(--secondary-color);
+            }
+        }  
+    }
+
+    .swipe-arrow {
+        border-bottom: solid var(--primary-color) $border-width-1;
+        border-right: solid var(--primary-color) $border-width-1;
+    }
+}
+
+.full-video-container {
+    background-color: black;
+}
+
+.full-video-loading-screen {
+    &.white {
+        .full-video-loading-screen-color {
+            background-color: black;
+        }
+
+        .full-video-loading-screen-text {
+            color: white;
+        }
+    }
+
+    &.custom-color {
+        .full-video-loading-screen-color {
+            background-color: var(--primary-color);
+        }
+
+        .full-video-loading-screen-text {
+            color: var(--primary-color);
+        }
+    }
+}
+
+
+
+
+
+
+
+//Index
+
+.project-info-index {
+    color: white;
+}
+
+.plus-index-vertical {
+    border-left: solid white $border-width-1;
+
+}
+
+.plus-index-horizontal {
+    border-top: solid white $border-width-1;
+}
+
+.plus-button-index {
+
+    border: solid white $border-width-1;
+}
+

@@ -1,0 +1,161 @@
+Title: 1 Copy 2
+
+----
+
+Mobile-webm: - file://P4YWcNy6cYng1D61
+
+----
+
+Mobile-mp4: - file://1nbtk5pbaD4QuRoH
+
+----
+
+Desktop-webm: - file://T615qsh5D0InrZRx
+
+----
+
+Desktop-mp4: - file://82zyT2EwAFXlCzAe
+
+----
+
+Vimeo-id: 1061723937
+
+----
+
+Still-image: - file://pg40ZWS9uAqcB0cM
+
+----
+
+Project-title: Lorem Ipsum
+
+----
+
+Client: Dolor Set Amet
+
+----
+
+Duration: 05:18
+
+----
+
+Year: 2023
+
+----
+
+Location: Hamburg
+
+----
+
+Type-of-project: Commercial
+
+----
+
+Director: 
+
+----
+
+Producer: 
+
+----
+
+Executive-producer: 
+
+----
+
+Creative-director: 
+
+----
+
+Concept: 
+
+----
+
+Camera: 
+
+----
+
+Steadicam: 
+
+----
+
+First-ac: 
+
+----
+
+Second-ac: 
+
+----
+
+Drone-op: 
+
+----
+
+Gaffer: 
+
+----
+
+Lead-electric: 
+
+----
+
+Styling: 
+
+----
+
+Make-up-and-hair: 
+
+----
+
+Setdesign: 
+
+----
+
+Production-assistance: 
+
+----
+
+Edit: 
+
+----
+
+Vfx: 
+
+----
+
+Color-grading: 
+
+----
+
+Three-d: 
+
+----
+
+Assistance: 
+
+----
+
+Bts: 
+
+----
+
+Sound-design: 
+
+----
+
+Production-company: 
+
+----
+
+Label: 
+
+----
+
+Color: #ff0000
+
+----
+
+Full-mp4: 
+
+----
+
+Uuid: KcT7LMZDvycc2eaR

@@ -1,0 +1,55 @@
+//Margin to Screenborder
+$margin-screen-border: 2rem;
+
+//Type
+$font-size-1: 1.6rem;
+$font-size-2: 1.2rem;
+$line-height: 2.08rem;
+
+//Animations
+$transition-1: all 500ms ease;
+$transition-2: all 300ms ease-in-out;
+$transition-3: all 50ms ease-in-out;
+$transition-4: all 700ms ease;
+$transition-5: all 900ms ease;
+
+
+
+//Border Width
+$border-width-1: 1px;
+$border-width-2: 0.12rem;
+$border-width-3: 1px;
+
+
+
+//Filter
+$backdrop-filter-1: blur(0.3rem);
+$filter-1: blur(1rem);
+
+//Opacity
+$opacity-1: 0.2;
+$opacity-2: 0.75;
+$opacity-3: 0.8;
+
+//Circle
+$circle-width: 1.9rem;
+$circle-height: 1.9rem;
+
+
+
+//Colors
+$color-1: white;
+$background-color-transparent: rgba(255, 255, 255, 0);
+
+//Startanimation
+
+$transition-delay: 9ms;
+
+
+//CSS variable for dynamic changes
+
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --start-animation-color: black;
+  }

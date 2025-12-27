@@ -1,0 +1,227 @@
+html {
+    box-sizing: border-box;
+    font-size: 2.2vw;
+    scroll-snap-type: y mandatory;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: never; /* Note: font-smooth is not widely supported */
+    }
+        
+    *, *:before, *:after {
+        box-sizing: inherit;
+        scrollbar-width: none; /* Firefox */
+    }
+
+    * {
+        transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease, max-width 0.5s ease;
+    }
+
+    // battery saving mode
+
+    .battery-saving-mode-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+        background-color: black;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100dvh;
+    }
+
+    .battery-saving-mode-text {
+        color: white;
+        font-size: 1.5rem;
+        transform: translateY(-100%);
+    }
+    
+    .php {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        padding-left: 2rem;
+        font-size: 1.5rem;
+        overflow: scroll;
+    }
+
+    body {
+        margin: 0;
+        overscroll-behavior: none;
+        background-color: black;
+        position: relative;
+    
+        &.no-scroll {
+            overflow: hidden;
+            height: 100vh;
+            width: 0vw;
+        }
+    }
+    
+    .blur {
+    
+        .title {
+            filter: $filter-1;
+        }
+
+        .time-bar-stripes {
+            filter: $filter-1;
+        }
+
+        .start-stripe {
+            filter: $filter-1;
+        }
+
+        .end-stripe {
+            filter: $filter-1;
+        }
+        
+        .time-bar {
+            filter: $filter-1;
+        }
+
+        .time-bar-background-color {
+            filter: $filter-1;
+        }
+
+
+
+
+        .project-info-header {
+            filter: $filter-1;
+        }
+    
+        .overlay-bottom {
+            filter: $filter-1;
+        }
+        
+        .project-info-all {
+            
+            filter: $filter-1 !important;
+            opacity: 1;
+        }
+    }
+
+    .no-opacity {
+
+        .overlay-top {
+            opacity: 0;
+        }
+
+        .overlay-bottom {
+            opacity: 0;
+        }
+
+        .overlay-background {
+            opacity: 0 !important;
+        }
+    }
+
+    // .blur-start {
+    
+    //     .title {
+    //         filter: $filter-1;
+    //         opacity: 0;
+    //     }
+
+    //     .time-bar-stripes {
+    //         filter: $filter-1;
+    //         opacity: 0;
+
+    //     }
+
+    //     .end-stripe {
+    //         filter: $filter-1;
+    //         opacity: 0;
+
+    //     }
+        
+    //     .time-bar {
+    //         filter: $filter-1;
+    //         opacity: 0;
+
+    //     }
+
+    //     .time-bar-background-color {
+    //         filter: $filter-1;
+    //         opacity: 0;
+
+    //     }
+
+
+
+
+    //     .project-info-header {
+    //         filter: $filter-1;
+    //         opacity: 0;
+
+    //     }
+    
+    //     .overlay-bottom {
+    //         filter: $filter-1;
+    //         opacity: 0;
+
+    //     }
+
+    //     .single-video {
+    //         filter: $filter-1;
+    //     }
+        
+    // }
+    
+    
+    
+    // Typography
+    
+    .expanded {
+        font-family: 'Slussen Expanded', Helvetica, sans-serif;
+        font-size: $font-size-1;
+        text-transform: uppercase;
+        line-height: $line-height;
+        letter-spacing: 0.12rem;
+    }
+    
+    .mono {
+        font-family: 'Slussen Mono Regular', monospace;
+        font-size: $font-size-1;
+        text-transform: uppercase;
+        line-height: $line-height;
+        word-spacing: -0.2rem;
+    }
+    
+    .mono-small {
+        font-family: 'Slussen Mono Regular', monospace;
+        font-size: $font-size-2;
+        text-transform: uppercase;
+        line-height: 1;
+        word-spacing: -0.2rem;
+    }
+    
+    .small {
+        font-family: 'Slussen Regular', Helvetica, sans-serif;
+        font-size: $font-size-2;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+    
+    
+    .regular {
+        font-family: 'Slussen Regular', Helvetica, sans-serif;
+        font-size: $font-size-1;
+        text-transform: uppercase;
+        line-height: 1.95rem;
+        letter-spacing: 0.01rem;
+    }
+    
+    .regular-no-uppercase {
+        font-family: 'Slussen Regular', Helvetica, sans-serif;
+        font-size: $font-size-1;
+        line-height: $line-height;
+        letter-spacing: 0.03rem;
+    }
+    

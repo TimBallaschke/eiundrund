@@ -1,0 +1,205 @@
+// .arrows-circle {
+
+//     position: absolute;
+//     bottom: 10rem;
+//     height: 7rem;
+//     width: 7rem;
+//     // border: solid black $border-width-1;
+//     border-radius: 50%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+    
+// }
+
+// .arrow-container {
+//     position: absolute;
+//     left: 0;
+//     bottom: 10rem;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-around;
+//     align-items: center;
+//     height: 4rem;
+//     width: 100%;
+//     transform: translateY(0.6rem);
+// }
+
+// .arrow {
+//     border-top: solid black $border-width-1;
+//     border-left: solid black $border-width-1;
+//     width: 3rem;
+//     height: 3rem;
+//     transform: rotate(45deg);
+//     display: inline-block;
+//     flex-shrink: 0; /* Prevents the arrow from shrinking */
+//     margin: -0.5rem;
+//     opacity: 0;
+//     transition: $transition-2;
+
+//     &.visible {
+//         opacity: 1;
+//     }
+// }
+
+
+
+
+// .start-animation {
+//     z-index: 9000;
+//     position: relative;
+// }
+
+// .start-in-view {
+//     height: 100vh; /* 100% of the viewport height */
+//     width: 100vw;  /* 100% of the viewport width */
+//     background-color: rgba(255, 0, 0, 0.8);
+//     backdrop-filter: contrast(150%) invert(100%) brightness(50%);
+//     position: relative;
+
+// }
+
+// .start-out-of-view {
+//     height: 100vh; /* 100% of the viewport height */
+//     width: 100vw;  /* 100% of the viewport width */
+// }
+
+
+
+
+.start-animation {
+    z-index: 9000;
+    position: relative;
+
+    &.not-displayed {
+
+        z-index: -100;
+        pointer-events: none;
+
+        .start-in-view {
+        
+            opacity: 0;
+        }
+    }
+}
+
+.start-in-view {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-margin: 0px;
+    position: relative;
+    backdrop-filter: blur(0.3rem) contrast(150%) invert(100%) brightness(12%);
+}
+
+.start-background-color {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--start-animation-color);
+    opacity: 0.5;
+    z-index: 11000;
+}
+
+.start-out-of-view {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-margin: 0px;
+}
+
+.start-word-container {
+    font-size: 27rem;
+    height: 600rem;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Slussen Expanded', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    animation: marquee 120s linear infinite;
+    color: var(--start-animation-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 15000;
+
+    // transform: translateY(100%);
+}
+
+.start-word {
+    display: inline-block;
+    transform: rotate(-90deg) translateY(-0.5rem);
+    line-height: 0.8;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateY(-195%);
+    }
+    100% {
+        transform: translateY(114.5%);
+    }
+}
+
+.arrows-circle {
+    position: absolute;
+    left: 50%;
+    bottom: 20rem;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: black;
+    // border: solid black $border-width-1;
+    opacity: 0;
+    z-index: 20000;
+    flex-direction: column;
+    transition: $transition-1;
+
+    &.visible {
+        opacity: 1;
+    }
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    flex-direction: column;
+    transform: translateY(0.3rem);
+}
+
+.arrow {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-top: solid var(--start-animation-color) 0.15rem;
+    border-left: solid var(--start-animation-color) 0.15rem;
+    z-index: 10000;
+    opacity: 0;
+    margin-bottom: -1rem;
+    transform: rotate(45deg);
+
+
+    &.visible {
+        opacity: 1;
+    }
+
+
+}
+
+
+
+

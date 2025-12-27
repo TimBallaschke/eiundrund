@@ -1,0 +1,36 @@
+@import "./variables";
+@import "./base";
+@import "./videos";
+@import "./overlay";
+@import "./overlaybackground";
+@import "./colors";
+@import "./indexview";
+@import "./startanimation";
+@import "./responsive";
+@import "./swipe-arrows";
+
+
+@font-face {
+    src: url('../Font/Slussen-Expanded-Black.otf') format('opentype');
+    font-family: 'Slussen Expanded';
+}
+
+@font-face {
+    src: url('../Font/Slussen-Extended-Black.woff2') format('woff2');
+    font-family: 'Slussen Extended';
+}
+
+@font-face {
+    font-family: 'Slussen Regular';
+    src: url('../Font/Slussen-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Slussen Mono Regular';
+    src: url('../Font/Slussen-Mono-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Monument Grotesk Mono Regular';
+    src: url('../Font/MonumentGroteskMono-Regular.otf') format('opentype');
+}
