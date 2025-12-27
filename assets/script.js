@@ -1588,12 +1588,18 @@ function openFullVideo() {
     player.eventHandlers = {
         showControls: showControls,
         togglePlayPause: () => togglePlayPause(player),
-        closeFullVideo: () => closeFullVideo(player)
+        closeFullVideo: () => closeFullVideo(player),
+        handleKeydown: (event) => {
+            if (event.key === 'Escape') {
+                closeFullVideo(player);
+            }
+        }
     };
 
     // Add event listeners using the stored references
     document.addEventListener('mousemove', player.eventHandlers.showControls);
     document.addEventListener('touchstart', player.eventHandlers.showControls);
+    document.addEventListener('keydown', player.eventHandlers.handleKeydown);
     fullVideo.addEventListener('touchstart', showControls);
     fullVideoPauseButton.addEventListener('click', player.eventHandlers.togglePlayPause);
     closeFullVideoButton.addEventListener('click', player.eventHandlers.closeFullVideo);
@@ -1697,6 +1703,7 @@ function closeFullVideo(player) {
 
     document.removeEventListener('mousemove', player.eventHandlers.showControls);
     document.removeEventListener('touchstart', player.eventHandlers.showControls);
+    document.removeEventListener('keydown', player.eventHandlers.handleKeydown);
     fullVideoPauseButton.removeEventListener('click', player.eventHandlers.togglePlayPause);
     closeFullVideoButton.removeEventListener('click', player.eventHandlers.closeFullVideo);
     timeBarFullVideoOutline.removeEventListener('click', player.eventHandlers.seekVideo);
